@@ -1,0 +1,46 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+django-debug-toolbar = "*"
+
+[requires]
+python_version = "3.7"
+
+[packages]
+django = "==2.2.9"
+django-environ = "==0.4.4"
+psycopg2-binary = "*"
+waitress = "==1.0.2"
+whitenoise = "==3.3.0"
+djangorestframework = "*"
+django-bootstrap4 = "*"
+django-allauth = "*"
+django-phone-field = "*"
+django-extensions = "*"
+django-cors-headers = "*"
+django-rest-framework-social-oauth2 = "*"
+django-rest-auth = "*"
+pyjwt = "*"
+djangorestframework-simplejwt = "*"
+rest-social-auth = "*"
+django-phone-verify = "*"
+pillow = "*"
+django-storages = "*"
+boto3 = "*"
+django-rest-swagger = "*"
+drf-yasg = "*"
+django-sendgrid-v5 = "*"
+django-distance-field = "*"
+django-measurement = "*"
+django-filter = "*"
+django-push-notifications = "*"
+drf-nested-routers = "*"
+formencode = "*"
+django-cleanup = "*"
+drf-nested-serializer = "*"
+libsass = "*"
+django-compressor = "*"
+django-sass-processor = "*"
