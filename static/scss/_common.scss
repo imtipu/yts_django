@@ -1,6 +1,100 @@
-a{
+body {
+  background-color: #585858;
+}
+
+a {
   color: #000000;
-  &:hover{
+  text-decoration: none;
+  &:hover {
     opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 1170px !important;
+}
+
+.section {
+  margin-top: 50px;
+  .container {
+    padding: 10px 15px;
+
+  }
+
+}
+
+.section.home-section {
+  .container {
+    border-radius: 8px;
+  }
+  .col {
+    padding: 0 5px;
+  }
+  .section-title {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 22px;
+    float: left;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 8px;
+    margin-left: -12px;
+  }
+}
+
+.movie-grid-card {
+  background-color: #3E3E3E;
+  border-radius: 8px;
+  border: 0;
+  margin-bottom: 10px;
+  max-width: 240px;
+  box-shadow: 1px 1px 6px 1px #9b9b9b;
+  .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .card-body {
+    border: 0;
+    padding: 5px;
+    text-align: center;
+  }
+  .movie-title {
+    color: #dedede;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 4px;
+  }
+  .movie-year {
+    color: #e1e1e1;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .rating {
+    color: #A1A1A1;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+}
+
+#downloadModal {
+  .modal-body {
+    .download-buttons {
+      .btn-download {
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        color: #DFDFDF;
+        background-color: #606060;
+      }
+    }
   }
 }

@@ -5,11 +5,12 @@ import requests
 # Create your views here.
 from .models import *
 
-@csrf_exempt
+
 def home(request):
-    data = request.POST
-    print(data.get('title'))
-    return JsonResponse(request.POST)
+    data = {
+        'title': 'Movies',
+    }
+    return render(request, 'home.html', data)
 
 
 @csrf_exempt

@@ -123,7 +123,7 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder',
 ]
 SASS_PROCESSOR_INCLUDE_DIRS = [
-    os.path.join(BASE_DIR, 'static/scss'),
+    os.path.join(BASE_DIR, 'static/css'),
     os.path.join(BASE_DIR, 'node_modules'),
 ]
 
@@ -131,11 +131,16 @@ SASS_PROCESSOR_AUTO_INCLUDE = False
 SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
 SASS_PRECISION = 8
 SASS_OUTPUT_STYLE = 'compact'
+SASS_PROCESSOR_ENABLED = True
 SASS_TEMPLATE_EXTS = ['.html', '.jade']
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static')

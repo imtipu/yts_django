@@ -1,0 +1,10 @@
+<div class="card movie-grid-card">
+    <img class="card-img-top" src="{{ movie.medium_cover_image }}">
+    <div class="card-body">
+        <h5 class="movie-title">{{ movie.title_english }}</h5>
+        <div class="movie-year">{{ movie.year }}</div>
+        <div class="rating">IMDb: {{ movie.rating }}</div>
+        <button class="download-modal btn btn-dark btn-sm" data-id="{{ movie.id }}">Download</button>
+
+    </div>
+</div>
