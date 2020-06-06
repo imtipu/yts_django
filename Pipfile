@@ -10,7 +10,7 @@ django-debug-toolbar = "*"
 python_version = "3.7"
 
 [packages]
-django = "==2.2.9"
+django = "==2.2.13"
 django-environ = "==0.4.4"
 psycopg2-binary = "*"
 waitress = "==1.0.2"
